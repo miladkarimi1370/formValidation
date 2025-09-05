@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Henny Penny';
+    src: url('../font/HennyPenny-Regular.eot');
+    src: url('../font/HennyPenny-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/HennyPenny-Regular.woff2') format('woff2'),
+        url('../font/HennyPenny-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Henny Penny';
+}
+
+@layer base {
+    .row {
+        @apply flex flex-wrap
+    }
+    .rotateAnimation {
+        animation: rotate 10s linear infinite forwards;
+    }
+        .rotateAnimation2 {
+        animation: rotate 8s linear infinite forwards;
+    }
+}
+
+@layer components {}
+
+@layer utilities {}
+
+@layer theme {}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

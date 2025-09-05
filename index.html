@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Validation</title>
+    <link rel="stylesheet" href="style/output.css">
+</head>
+
+<body>
+
+
+    <main
+        class="bg-[#282A36] bg-cover bg-no-repeat bg-center w-full h-[100vh] row justify-center items-center relative">
+        <div
+            class="absolute border-[0.5px] flex w-[33vw] h-[55vh] border-stone-400 p-18 rounded-full rotateAnimation pointer-events-none duration-500">
+        </div>
+        <div
+            class="absolute border-[0.5px] flex w-[32vw] h-[53vh] border-stone-400 p-20 rounded-full rotateAnimation2 pointer-events-none duration-500">
+        </div>
+        <div
+            class="absolute border-[0.5px] flex w-[34vw] h-[56vh] border-stone-400 p-22 rounded-full rotateAnimation pointer-events-none duration-500">
+        </div>
+        <form action="" id="loginAndRegister" class=" w-[20vw] *:text-white *:my-3">
+
+            <h2 class="text-xl font-bold text-center"></h2>
+            <input type="text"
+                class=" w-full border-2 border-white px-3 py-2 rounded-2xl flex justify-center items-center"
+                placeholder="username . . .">
+            <span class="text-sm text-extralight hidden capitalize" style="color: rgb(255, 0, 0);"
+                id="usernameError"></span>
+            <input type="password"
+                class="w-full border-2 border-white px-3 py-2 rounded-2xl flex justify-center items-center"
+                placeholder="password . . .">
+
+            <span class="text-sm text-extralight hidden" style="color: rgb(255, 0, 0);" id="passwordError"></span>
+            <button type="submit"
+                class="w-full bg-gradient-to-r from-purple-500 via-red-400 to-amber-700 rounded-2xl py-2 flex justify-center items-center font-extralight cursor-pointer"></button>
+            <div class="flex justify-between items-center *:text-sm">
+                <button class="cursor-pointer">forget password</button>
+                <button class="cursor-pointer"></button>
+            </div>
+        </form>
+        <div id="toastify" class="absolute -top-20 -left-20  h-6 duration-500 ">
+            <p class="text-white bg-green-700 py-6 capitalize rounded-3xl px-3 font-extrabold italic tracking-widest border-t-8 border-t-green-400">forms submit has been succeed 😃 </p>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>
